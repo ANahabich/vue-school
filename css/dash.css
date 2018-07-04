@@ -1,0 +1,32 @@
+#days{
+    height: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: -2px;
+}
+.day{
+    border:2px solid #bedeef;
+    border-bottom: 2px solid #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:13%;
+}
+.day.selected{
+    border-color: #239DD3;
+    border-bottom: 2px solid #fff;
+}
+.day .name{
+    font-size: 27px;
+    color: #4c7d98;
+}
+.day .date{
+    margin-left: 10px;
+    color: #4c7d98;
+}

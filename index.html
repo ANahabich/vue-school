@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue School</title>
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dash.css">
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo"><img src="images/logo.png" alt="logo" width="143" height="60"></div>
+        <div id="header__tabs" >
+            <headertabs class="header__tab"
+                        v-for="tab in tabs"
+                        v-bind:tab="tab"
+                        v-bind:key="tab.type"
+                        v-bind:class="{ selected: tab.isSelected}"
+                        v-bind:data-type="tab.type"
+                        v-on:click="tabClick(tab.type)"
+            ></headertabs>
+        </div>
+
+    </div>
+    <div id="dash">
+        <!--<div id="days">-->
+            <!--<div id="days__left"></div>-->
+            <!--<days_list class="day"-->
+                       <!--v-for="day in days"-->
+                       <!--v-bind:day="day"-->
+                       <!--v-bind:key="day.name"-->
+                       <!--v-bind:class="{ selected: day.isSelected }"-->
+            <!--&gt;</days_list>-->
+            <!--<div id="days__right"></div>-->
+        <!--</div>-->
+    </div>
+    <div id="footer"></div>
+    <script src="js/main.js"></script>
+    <script src="js/week.js"></script>
+</div>
+</body>
+</html>
